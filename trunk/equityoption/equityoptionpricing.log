@@ -1,0 +1,595 @@
+g++ CBadRecord.cpp COptionPrice.cpp COptionRecord.cpp main.cpp -o bnpp -lQuantLib
+./bnpp OptionData.txt
+ Error parsing this data record with deal id 803621111 at column 4 with value 63013.96
+bad lexical cast: source type value could not be interpreted as target Please check input data record!
+Bad record: Failed to parse data
+DEAL ID         804942207       
+DEAL DATE       January          25th, 2005
+QUANTITY        50000           
+END DATE        March            18th, 2005
+STRIKE          340             
+BUY OR SELL     BUY             
+OPTION TYPE     CALL            
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 18.1017         
+VOLATILITY      0.129687        
+SPOT VALUE      356.51          
+
+Method                             European      
+Black-Scholes                      18.418657     
+Integral                           18.418658     
+Finite differences                 18.418766     
+Binomial Jarrow-Rudd               18.419006     
+Binomial Cox-Ross-Rubinstein       18.418661     
+Additive equiprobabilities         18.418614     
+Binomial Trigeorgis                18.418661     
+Binomial Tian                      18.419047     
+Binomial Leisen-Reimer             18.418657     
+Binomial Joshi                     18.418657     
+MC (crude)                         18.442469     
+QMC (Sobol)                        18.417091     
+
+DEAL ID         805331379       
+DEAL DATE       January          25th, 2005
+QUANTITY        25000           
+END DATE        October          21st, 2005
+STRIKE          340.000000      
+BUY OR SELL     BUY             
+OPTION TYPE     PUT             
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 12.268053       
+VOLATILITY      0.146698        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      9.539925      
+Integral                           9.539906      
+Finite differences                 9.539956      
+Binomial Jarrow-Rudd               9.541954      
+Binomial Cox-Ross-Rubinstein       9.540470      
+Additive equiprobabilities         9.543069      
+Binomial Trigeorgis                9.540470      
+Binomial Tian                      9.543931      
+Binomial Leisen-Reimer             9.539924      
+Binomial Joshi                     9.539925      
+MC (crude)                         9.540605      
+QMC (Sobol)                        9.541574      
+
+DEAL ID         805354529       
+DEAL DATE       January          25th, 2005
+QUANTITY        -50000          
+END DATE        March            18th, 2005
+STRIKE          340.000000      
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 18.101697       
+VOLATILITY      0.129687        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      18.418657     
+Integral                           18.418658     
+Finite differences                 18.418766     
+Binomial Jarrow-Rudd               18.419006     
+Binomial Cox-Ross-Rubinstein       18.418661     
+Additive equiprobabilities         18.418614     
+Binomial Trigeorgis                18.418661     
+Binomial Tian                      18.419047     
+Binomial Leisen-Reimer             18.418657     
+Binomial Joshi                     18.418657     
+MC (crude)                         18.442469     
+QMC (Sobol)                        18.417091     
+
+DEAL ID         905340427       
+DEAL DATE       January          25th, 2005
+QUANTITY        85000           
+END DATE        October          21st, 2005
+STRIKE          240.000000      
+BUY OR SELL     BUY             
+OPTION TYPE     PUT             
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 0.742799        
+VOLATILITY      0.239754        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      0.566552      
+Integral                           0.566551      
+Finite differences                 0.566663      
+Binomial Jarrow-Rudd               0.565975      
+Binomial Cox-Ross-Rubinstein       0.566003      
+Additive equiprobabilities         0.569900      
+Binomial Trigeorgis                0.566013      
+Binomial Tian                      0.564349      
+Binomial Leisen-Reimer             0.566553      
+Binomial Joshi                     0.566552      
+MC (crude)                         0.572571      
+QMC (Sobol)                        0.567571      
+
+DEAL ID         905340430       
+DEAL DATE       January          25th, 2005
+QUANTITY        -85000          
+END DATE        October          21st, 2005
+STRIKE          300.000000      
+BUY OR SELL     SELL            
+OPTION TYPE     PUT             
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 4.304271        
+VOLATILITY      0.184647        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      3.297444      
+Integral                           3.297430      
+Finite differences                 3.297524      
+Binomial Jarrow-Rudd               3.299613      
+Binomial Cox-Ross-Rubinstein       3.295180      
+Additive equiprobabilities         3.305242      
+Binomial Trigeorgis                3.295187      
+Binomial Tian                      3.295974      
+Binomial Leisen-Reimer             3.297444      
+Binomial Joshi                     3.297444      
+MC (crude)                         3.293247      
+QMC (Sobol)                        3.298875      
+
+DEAL ID         905340433       
+DEAL DATE       January          25th, 2005
+QUANTITY        91500           
+END DATE        October          21st, 2005
+STRIKE          260.000000      
+BUY OR SELL     BUY             
+OPTION TYPE     PUT             
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 1.457909        
+VOLATILITY      0.224085        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      1.118292      
+Integral                           1.118292      
+Finite differences                 1.118371      
+Binomial Jarrow-Rudd               1.116491      
+Binomial Cox-Ross-Rubinstein       1.117895      
+Additive equiprobabilities         1.122018      
+Binomial Trigeorgis                1.117906      
+Binomial Tian                      1.114229      
+Binomial Leisen-Reimer             1.118293      
+Binomial Joshi                     1.118292      
+MC (crude)                         1.103488      
+QMC (Sobol)                        1.119480      
+
+DEAL ID         905340440       
+DEAL DATE       January          25th, 2005
+QUANTITY        -91500          
+END DATE        October          21st, 2005
+STRIKE          320.000000      
+BUY OR SELL     SELL            
+OPTION TYPE     PUT             
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 7.224523        
+VOLATILITY      0.164701        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      5.549447      
+Integral                           5.549455      
+Finite differences                 5.549668      
+Binomial Jarrow-Rudd               5.546140      
+Binomial Cox-Ross-Rubinstein       5.551718      
+Additive equiprobabilities         5.550046      
+Binomial Trigeorgis                5.551721      
+Binomial Tian                      5.545138      
+Binomial Leisen-Reimer             5.549447      
+Binomial Joshi                     5.549447      
+MC (crude)                         5.540648      
+QMC (Sobol)                        5.550982      
+
+DEAL ID         905340461       
+DEAL DATE       January          25th, 2005
+QUANTITY        75000           
+END DATE        October          21st, 2005
+STRIKE          340.000000      
+BUY OR SELL     BUY             
+OPTION TYPE     CALL            
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NLEXTIDX0001AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    INT_IXONLG      
+FRONT OFFICE PV 22.831442       
+VOLATILITY      0.146698        
+SPOT VALUE      356.510000      
+
+Method                             European      
+Black-Scholes                      28.546468     
+Integral                           28.546449     
+Finite differences                 28.546595     
+Binomial Jarrow-Rudd               28.548487     
+Binomial Cox-Ross-Rubinstein       28.547005     
+Additive equiprobabilities         28.550046     
+Binomial Trigeorgis                28.547005     
+Binomial Tian                      28.550474     
+Binomial Leisen-Reimer             28.546467     
+Binomial Joshi                     28.546468     
+MC (crude)                         28.555313     
+QMC (Sobol)                        28.542198     
+
+DEAL ID         905500450       
+DEAL DATE       January          11th, 2005
+QUANTITY        -500000         
+END DATE        February         18th, 2005
+STRIKE          22.000000       
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            BE0003801181AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    DEUTLON         
+FRONT OFFICE PV 0.108478        
+VOLATILITY      0.149870        
+SPOT VALUE      21.360000       
+
+Method                             American      
+Barone-Adesi/Whaley                0.179882      
+Bjerksund/Stensland                0.179882      
+Finite differences                 0.179882      
+Binomial Jarrow-Rudd               0.179884      
+Binomial Cox-Ross-Rubinstein       0.179862      
+Additive equiprobabilities         0.179901      
+Binomial Trigeorgis                0.179862      
+Binomial Tian                      0.179874      
+Binomial Leisen-Reimer             0.179882      
+Binomial Joshi                     0.179882      
+MC (Longstaff Schwartz)            0.176576      
+
+DEAL ID         905500452       
+DEAL DATE       January          11th, 2005
+QUANTITY        500000          
+END DATE        February         18th, 2005
+STRIKE          20.000000       
+BUY OR SELL     BUY             
+OPTION TYPE     PUT             
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            BE0003801181AMS 
+PORTFOLIO       yixmnlgaex      
+COUNTERPARTY    DEUTLON         
+FRONT OFFICE PV 0.046327        
+VOLATILITY      0.201474        
+SPOT VALUE      21.360000       
+
+Method                             American      
+Barone-Adesi/Whaley                0.106173      
+Bjerksund/Stensland                0.106025      
+Finite differences                 0.106161      
+Binomial Jarrow-Rudd               0.106230      
+Binomial Cox-Ross-Rubinstein       0.106155      
+Additive equiprobabilities         0.106319      
+Binomial Trigeorgis                0.106155      
+Binomial Tian                      0.106052      
+Binomial Leisen-Reimer             0.106168      
+Binomial Joshi                     0.106168      
+MC (Longstaff Schwartz)            0.102222      
+
+DEAL ID         905625135       
+DEAL DATE       January          25th, 2005
+QUANTITY        200000          
+END DATE        December         19th, 2008
+STRIKE          20.000000       
+BUY OR SELL     BUY             
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            BE0003801181AMS 
+PORTFOLIO       stmnlgfora      
+COUNTERPARTY    SLIILON         
+FRONT OFFICE PV 3.302363        
+VOLATILITY      0.225433        
+SPOT VALUE      21.360000       
+
+Method                             American      
+Barone-Adesi/Whaley                4.735516      
+Bjerksund/Stensland                4.735516      
+Finite differences                 4.735516      
+Binomial Jarrow-Rudd               4.732984      
+Binomial Cox-Ross-Rubinstein       4.732499      
+Additive equiprobabilities         4.747909      
+Binomial Trigeorgis                4.732571      
+Binomial Tian                      4.733420      
+Binomial Leisen-Reimer             4.730817      
+Binomial Joshi                     4.730817      
+MC (Longstaff Schwartz)            4.676124      
+
+DEAL ID         905625806       
+DEAL DATE       January          25th, 2005
+QUANTITY        -200000         
+END DATE        December         19th, 2008
+STRIKE          25.000000       
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            BE0003801181AMS 
+PORTFOLIO       stmnlgfora      
+COUNTERPARTY    BARCLON         
+FRONT OFFICE PV 1.414404        
+VOLATILITY      0.199957        
+SPOT VALUE      21.360000       
+
+Method                             American      
+Barone-Adesi/Whaley                2.368210      
+Bjerksund/Stensland                2.368210      
+Finite differences                 2.368210      
+Binomial Jarrow-Rudd               2.364742      
+Binomial Cox-Ross-Rubinstein       2.366532      
+Additive equiprobabilities         2.373125      
+Binomial Trigeorgis                2.366561      
+Binomial Tian                      2.366523      
+Binomial Leisen-Reimer             2.363748      
+Binomial Joshi                     2.363748      
+MC (Longstaff Schwartz)            2.329044      
+
+DEAL ID         905625840       
+DEAL DATE       January          25th, 2005
+QUANTITY        -100000         
+END DATE        December         19th, 2008
+STRIKE          25.000000       
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            BE0003801181AMS 
+PORTFOLIO       stmnlgfora      
+COUNTERPARTY    CDCMPAR         
+FRONT OFFICE PV 1.414404        
+VOLATILITY      0.199957        
+SPOT VALUE      21.360000       
+
+Method                             American      
+Barone-Adesi/Whaley                2.368210      
+Bjerksund/Stensland                2.368210      
+Finite differences                 2.368210      
+Binomial Jarrow-Rudd               2.364742      
+Binomial Cox-Ross-Rubinstein       2.366532      
+Additive equiprobabilities         2.373125      
+Binomial Trigeorgis                2.366561      
+Binomial Tian                      2.366523      
+Binomial Leisen-Reimer             2.363748      
+Binomial Joshi                     2.363748      
+MC (Longstaff Schwartz)            2.329044      
+
+DEAL ID         905631588       
+DEAL DATE       January          26th, 2005
+QUANTITY        500000          
+END DATE        April            15th, 2005
+STRIKE          22.000000       
+BUY OR SELL     BUY             
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            BE0003801181AMS 
+PORTFOLIO       stmnlgfora      
+COUNTERPARTY    GSILLON         
+FRONT OFFICE PV 0.385277        
+VOLATILITY      0.153984        
+SPOT VALUE      21.360000       
+
+Method                             American      
+Barone-Adesi/Whaley                0.367132      
+Bjerksund/Stensland                0.367132      
+Finite differences                 0.367132      
+Binomial Jarrow-Rudd               0.367287      
+Binomial Cox-Ross-Rubinstein       0.367258      
+Additive equiprobabilities         0.367348      
+Binomial Trigeorgis                0.367258      
+Binomial Tian                      0.367090      
+Binomial Leisen-Reimer             0.367132      
+Binomial Joshi                     0.367132      
+MC (Longstaff Schwartz)            0.363184      
+
+DEAL ID         803295812       
+DEAL DATE       March            9th, 2004
+QUANTITY        -100000         
+END DATE        October          21st, 2005
+STRIKE          15.000000       
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            NL0000303600AMS 
+PORTFOLIO       stmnlginga      
+COUNTERPARTY    CHASLON         
+FRONT OFFICE PV 7.135055        
+VOLATILITY      0.302482        
+SPOT VALUE      22.050000       
+
+Method                             American      
+Barone-Adesi/Whaley                7.817268      
+Bjerksund/Stensland                7.817268      
+Finite differences                 7.817268      
+Binomial Jarrow-Rudd               7.817623      
+Binomial Cox-Ross-Rubinstein       7.817488      
+Additive equiprobabilities         7.829528      
+Binomial Trigeorgis                7.817552      
+Binomial Tian                      7.817069      
+Binomial Leisen-Reimer             7.817268      
+Binomial Joshi                     7.817268      
+MC (Longstaff Schwartz)            7.765998      
+
+DEAL ID         803295818       
+DEAL DATE       March            9th, 2004
+QUANTITY        100000          
+END DATE        October          21st, 2005
+STRIKE          25.000000       
+BUY OR SELL     BUY             
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            NL0000303600AMS 
+PORTFOLIO       stmnlginga      
+COUNTERPARTY    CHASLON         
+FRONT OFFICE PV 0.259604        
+VOLATILITY      0.172048        
+SPOT VALUE      22.050000       
+
+Method                             American      
+Barone-Adesi/Whaley                1.006076      
+Bjerksund/Stensland                1.006076      
+Finite differences                 1.006076      
+Binomial Jarrow-Rudd               1.005876      
+Binomial Cox-Ross-Rubinstein       1.006493      
+Additive equiprobabilities         1.007207      
+Binomial Trigeorgis                1.006494      
+Binomial Tian                      1.006630      
+Binomial Leisen-Reimer             1.006076      
+Binomial Joshi                     1.006076      
+MC (Longstaff Schwartz)            1.004129      
+
+DEAL ID         803719290       
+DEAL DATE       April            27th, 2004
+QUANTITY        -100000         
+END DATE        March            18th, 2005
+STRIKE          20.000000       
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            NL0000303600AMS 
+PORTFOLIO       stmnlginga      
+COUNTERPARTY    SBILLON         
+FRONT OFFICE PV 2.206786        
+VOLATILITY      0.224781        
+SPOT VALUE      22.050000       
+
+Method                             American      
+Barone-Adesi/Whaley                3.099133      
+Bjerksund/Stensland                3.099133      
+Finite differences                 3.099133      
+Binomial Jarrow-Rudd               3.098982      
+Binomial Cox-Ross-Rubinstein       3.098656      
+Additive equiprobabilities         3.101532      
+Binomial Trigeorgis                3.098662      
+Binomial Tian                      3.099440      
+Binomial Leisen-Reimer             3.099133      
+Binomial Joshi                     3.099133      
+MC (Longstaff Schwartz)            3.080826      
+
+DEAL ID         803990133       
+DEAL DATE       May              26th, 2004
+QUANTITY        -100000         
+END DATE        October          20th, 2006
+STRIKE          20.000000       
+BUY OR SELL     SELL            
+OPTION TYPE     PUT             
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NL0000303600AMS 
+PORTFOLIO       stmnlginga      
+COUNTERPARTY    INT_SEFNLG      
+FRONT OFFICE PV 1.882702        
+VOLATILITY      0.225597        
+SPOT VALUE      22.050000       
+
+Method                             European      
+Black-Scholes                      1.793615      
+Integral                           1.793615      
+Finite differences                 1.793622      
+Binomial Jarrow-Rudd               1.793102      
+Binomial Cox-Ross-Rubinstein       1.794413      
+Additive equiprobabilities         1.796629      
+Binomial Trigeorgis                1.794426      
+Binomial Tian                      1.794037      
+Binomial Leisen-Reimer             1.793614      
+Binomial Joshi                     1.793615      
+MC (crude)                         1.811534      
+QMC (Sobol)                        1.793819      
+
+DEAL ID         803990144       
+DEAL DATE       May              26th, 2004
+QUANTITY        100000          
+END DATE        October          20th, 2006
+STRIKE          20.000000       
+BUY OR SELL     BUY             
+OPTION TYPE     CALL            
+EXERCISE TYPE   European        
+CURRENCY        EUR             
+ISIN            NL0000303600AMS 
+PORTFOLIO       stmnlginga      
+COUNTERPARTY    INT_SEFNLG      
+FRONT OFFICE PV 2.807329        
+VOLATILITY      0.225597        
+SPOT VALUE      22.050000       
+
+Method                             European      
+Black-Scholes                      4.318435      
+Integral                           4.318435      
+Finite differences                 4.318480      
+Binomial Jarrow-Rudd               4.317888      
+Binomial Cox-Ross-Rubinstein       4.319222      
+Additive equiprobabilities         4.326462      
+Binomial Trigeorgis                4.319254      
+Binomial Tian                      4.318858      
+Binomial Leisen-Reimer             4.318435      
+Binomial Joshi                     4.318435      
+MC (crude)                         4.305376      
+QMC (Sobol)                        4.317246      
+
+DEAL ID         804333718       
+DEAL DATE       July             16th, 2004
+QUANTITY        -10000          
+END DATE        December         15th, 2006
+STRIKE          16.560000       
+BUY OR SELL     SELL            
+OPTION TYPE     CALL            
+EXERCISE TYPE   American        
+CURRENCY        EUR             
+ISIN            NL0000303600AMS 
+PORTFOLIO       stmnlginga      
+COUNTERPARTY    INT_FLOEXO      
+FRONT OFFICE PV 5.719125        
+VOLATILITY      0.258897        
+SPOT VALUE      22.050000       
+
+Method                             American      
+Barone-Adesi/Whaley                6.834254      
+Bjerksund/Stensland                6.834254      
+Finite differences                 6.834254      
+Binomial Jarrow-Rudd               6.834810      
+Binomial Cox-Ross-Rubinstein       6.834795      
+Additive equiprobabilities         6.847725      
+Binomial Trigeorgis                6.834860      
+Binomial Tian                      6.833543      
+Binomial Leisen-Reimer             6.834254      
+Binomial Joshi                     6.834254      
+MC (Longstaff Schwartz)            6.763091      
+
