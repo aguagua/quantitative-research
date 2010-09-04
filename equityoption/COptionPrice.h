@@ -19,8 +19,8 @@ class COptionPrice {
  public:
   virtual ~COptionPrice() {};
 
-  virtual double getPrice(Date settlementDate, 
-			  Date dMaturity, 
+  virtual double getPrice(Date tSettlementDate, 
+			  Date tMaturityDate, 
 			  double dSpotPrice, 
 			  double dStrikePrice, 
 			  double dVolatility, 
@@ -29,8 +29,8 @@ class COptionPrice {
 
 class CEuropeanOptionPrice : public COptionPrice {
  public:
-  double getPrice(Date settlementDate, 
-		  Date dMaturity, 
+  double getPrice(Date tSettlementDate, 
+		  Date tMaturityDate, 
 		  double dSpotPrice, 
 		  double dStrikePrice, 
 		  double dVolatility, 
@@ -38,8 +38,8 @@ class CEuropeanOptionPrice : public COptionPrice {
 };
 
 class CAmericanOptionPrice : public COptionPrice {
-  double getPrice(Date settlementDate, 
-		  Date dMaturity, 
+  double getPrice(Date tSettlementDate, 
+		  Date tMaturityDate, 
 		  double dSpotPrice, 
 		  double dStrikePrice, 
 		  double dVolatility, 

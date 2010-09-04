@@ -34,7 +34,7 @@ int main(int argc, char * argv[])
         vector<COptionRecord> vOptionData;
         string sLine;
 		
-        // assume the file starts with data, with no header info, 
+        // process header info
         getline(ifsOptionData, sLine); // item numbers
         getline(ifsOptionData, sLine); // header
         // otherwise we just process or skip these lines
