@@ -49,7 +49,7 @@ CEuropeanOptionPrice::getPrice(
 		
         // printout
         std::string method;
-        Size widths[] = { 35, 14, 14, 14 };
+        Size widths[] = { 35, 14 };
         std::cout << std::setw(widths[0]) << std::left << "Method"
                   << std::setw(widths[1]) << std::left << "European"
                   << std::endl;
@@ -255,7 +255,7 @@ CAmericanOptionPrice::getPrice(
         std::string method;
 		
         // write column headings
-        Size widths[] = { 35, 14, 14, 14 };
+        Size widths[] = { 35, 14 };
         std::cout << std::setw(widths[0]) << std::left << "Method"
                   << std::setw(widths[1]) << std::left << "American"
                   << std::endl;
