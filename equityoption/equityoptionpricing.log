@@ -1,7 +1,7 @@
-g++ CBadRecord.cpp COptionPrice.cpp COptionRecord.cpp main.cpp -o bnpp -lQuantLib
 ./bnpp OptionData.txt
+bad lexical cast: source type value could not be interpreted as target
  Error parsing this data record with deal id 803621111 at column 4 with value 63013.96
-bad lexical cast: source type value could not be interpreted as target Please check input data record!
+ Please check input data record!
 Bad record: Failed to parse data
 DEAL ID         804942207       
 DEAL DATE       January          25th, 2005
