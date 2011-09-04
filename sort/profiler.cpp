@@ -11,35 +11,43 @@
 #include "sort.h"
 #include <ctime>
 #include <cstdlib>
+#include <cstring>
 #include <iostream>
 #include <iomanip>
+#include <sys/time.h>
 
 //#define PRINT_SORTED_ARRAY
-//#define PRINT_RUN_TIME
+#define PRINT_RUN_TIME
 #define PRINT_RESULTS
+
+using namespace std;
 
 // algorithm benchmark function
 clock_t benchmark(algos sAlgo, int * v, int n)
 {
-    clock_t startTime, endTime;
-    clock_t duration;
+    struct timeval startTime, endTime;
+    time_t duration;
     
-	int array[n];
+    int array[n];
     memcpy(array, v, n*sizeof(int));
     
-    startTime = clock();
+    // use gettimeofday for microseconds Wall time, or clock_gettime() for CPU time in CLOCKS_PER_SECOND
+    gettimeofday(&startTime, NULL);
+    //std::cout << "Start time is "<< startTime << std::endl;
+
     sAlgo.pfunc(array, n);
-    endTime = clock();
+    gettimeofday(&endTime, NULL);
+    //std::cout << "End time is "<< endTime << std::endl;
     
 #ifdef PRINT_SORTED_ARRAY
     std::cout << sAlgo.name << " sorted array in ascending order: " << std::endl;	
     for (int i = 0 ; i < n; ++i) {
         std::cout << array[i] << std::endl;
-    }
+    }4
     std::cout << std::endl;
 #endif
     
-    duration = endTime - startTime;
+    duration = (endTime.tv_sec - startTime.tv_sec)*1000000 + (endTime.tv_usec - startTime.tv_usec) + 0.5;
     return duration;
 }
 

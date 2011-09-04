@@ -27,7 +27,7 @@ int main (int argc, char * const argv[]) {
     int numofAlgos = sizeof(sortingAlgos)/sizeof(sortingAlgos[0]);
     
     // maximum input data array size
-    int arraySize = 1000;
+    int arraySize = 1000000;
     
     // profile sorting algorithms
     profiler(sortingAlgos, numofAlgos, arraySize);
