@@ -20,7 +20,7 @@ int main (int argc, char * const argv[]) {
         {&mergeSort, "mergesort"},
         {&heapSort, "heapsort"},
         {&shellSort, "shellsort"},
-        {&parallelQuickSort, "parallelquicksort"}
+        {&parallelQuickSort, "parquicksort"}
     };
     
     // number of algorithms
