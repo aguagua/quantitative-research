@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <sstream>
 
-void BigInteger::remove_leading_zeros(magnitudeType& num)
+void BigInteger::removeLeadingZeros(magnitudeType& num)
 {
     sizeType i;
     for ( i = num.size(); i>0;--i)
@@ -101,7 +101,7 @@ BigInteger::magnitudeType BigInteger::addCore(const magnitudeType &lhs, const ma
     return temp;
 }
 
-BigInteger::magnitudeType BigInteger::subCore(const magnitudeType &lhs, const magnitudeType &rhs)
+BigInteger::magnitudeType BigInteger::substractCore(const magnitudeType &lhs, const magnitudeType &rhs)
 {
     sizeType lsize = lhs.size();
     sizeType rsize = rhs.size();
@@ -119,12 +119,12 @@ BigInteger::magnitudeType BigInteger::subCore(const magnitudeType &lhs, const ma
         temp.push_back(tv);
     }
     
-    remove_leading_zeros(temp);
+    removeLeadingZeros(temp);
     
     return temp;
 }
 
-BigInteger::magnitudeType BigInteger::multCore(const magnitudeType &lhs, const magnitudeType &rhs)
+BigInteger::magnitudeType BigInteger::multiplyCore(const magnitudeType &lhs, const magnitudeType &rhs)
 {
     
     int lv, rv, tv;
@@ -151,7 +151,7 @@ BigInteger::magnitudeType BigInteger::multCore(const magnitudeType &lhs, const m
         temp[i+lsize] = carry;
     }
     
-    remove_leading_zeros(temp);
+    removeLeadingZeros(temp);
     
     return temp;
 }
@@ -194,10 +194,10 @@ const BigInteger& BigInteger::operator+=(const BigInteger & rhs)
 {
     if (sign != rhs.sign) {
         if (magnitudeLess(rhs)) {
-            magnitude = subCore(rhs.magnitude, magnitude);
+            magnitude = substractCore(rhs.magnitude, magnitude);
             sign = rhs.sign;
         } else {
-            magnitude = subCore(magnitude, rhs.magnitude);
+            magnitude = substractCore(magnitude, rhs.magnitude);
         }
     } else {
         magnitude = addCore(magnitude, rhs.magnitude);
@@ -210,10 +210,10 @@ const BigInteger& BigInteger::operator-=(const BigInteger & rhs)
 {
     if (sign == rhs.sign) {
         if (magnitudeLess(rhs)) {
-            magnitude = subCore(rhs.magnitude, magnitude);
+            magnitude = substractCore(rhs.magnitude, magnitude);
             sign = rhs.sign == neg ? pos : neg;
         } else {
-        	magnitude = subCore(magnitude, rhs.magnitude);
+        	magnitude = substractCore(magnitude, rhs.magnitude);
         }
     } else {
         magnitude = addCore(magnitude, rhs.magnitude);
@@ -230,7 +230,7 @@ const BigInteger& BigInteger::operator *= (const BigInteger& rhs)
         sign = pos;
     }
     
-    magnitude = multCore(magnitude, rhs.magnitude);
+    magnitude = multiplyCore(magnitude, rhs.magnitude);
     
     return *this;
 }
