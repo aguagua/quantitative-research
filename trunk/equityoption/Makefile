@@ -7,7 +7,7 @@
 all: compile run
 
 compile:
-	g++ CBadRecord.cpp COptionPrice.cpp COptionRecord.cpp main.cpp -o bnpp -lQuantLib
+	g++ CBadRecord.cpp COptionPrice.cpp COptionRecord.cpp main.cpp -o equityoption -lQuantLib
 
 run:
-	./bnpp OptionData.txt
+	./equityoption OptionData.txt
