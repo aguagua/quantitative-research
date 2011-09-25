@@ -4,7 +4,7 @@ References
 
 *Interactive brokers C++ API*
 
-http://www.interactivebrokers.com/php/apiUsersGuide/apiguide.htm
+[http://www.interactivebrokers.com/php/apiUsersGuide/apiguide.htm]
 
 = Trading strategy and risk management =
 
