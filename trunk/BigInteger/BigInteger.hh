@@ -23,12 +23,12 @@ class BigInteger
     magnitudeType magnitude;
     
     // helper function
-    void remove_leading_zeros(magnitudeType& num);
+    void removeLeadingZeros(magnitudeType& num);
     
     // arithmetic cores
     magnitudeType addCore(const magnitudeType &lhs, const magnitudeType &rhs);
-    magnitudeType subCore(const magnitudeType &lhs, const magnitudeType &rhs);
-    magnitudeType multCore(const magnitudeType &lhs, const magnitudeType &rhs);
+    magnitudeType substractCore(const magnitudeType &lhs, const magnitudeType &rhs);
+    magnitudeType multiplyCore(const magnitudeType &lhs, const magnitudeType &rhs);
     
     // relational
     bool magnitudeLess(const BigInteger& rhs) const;
