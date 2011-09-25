@@ -1,6 +1,6 @@
 /*
  *  main.cpp
- *  lucid
+ *  
  *
  *  Created by Wei Wang on 24/07/2011.
  *  Copyright 2011 __MyCompanyName__. All rights reserved.
@@ -27,10 +27,10 @@ int main (int argc, char * const argv[]) {
     int numofAlgos = sizeof(sortingAlgos)/sizeof(sortingAlgos[0]);
     
     // maximum input data array size
-    int arraySize = 1000000;
+    int maxArraySize = 1000000;
     
     // profile sorting algorithms
-    profiler(sortingAlgos, numofAlgos, arraySize);
+    profiler(sortingAlgos, numofAlgos, maxArraySize);
     
     return 0;
 }
