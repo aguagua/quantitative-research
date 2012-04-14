@@ -39,13 +39,13 @@ int main (int argc, char * const argv[]) {
     
     // sorting algorithms, function and name
     algos sortingAlgos[] = {
-        {&bubbleSort, "bubblesort"},
-        {&insertionSort, "insertionsort"},
-        {&selectionSort,"selectionsort"},
-        {&shellSort, "shellsort"},
+        //{&bubbleSort, "bubblesort"},
+        //{&insertionSort, "insertionsort"},
+        //{&selectionSort,"selectionsort"},
+        //{&shellSort, "shellsort"},
         {&quickSort, "quicksort"},
         {&mergeSort, "mergesort"},
-        {&heapSort, "heapsort"},
+        //{&heapSort, "heapsort"},
         {&parallelQuickSort, "parquicksort"}
     };
 
