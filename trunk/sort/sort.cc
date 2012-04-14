@@ -226,7 +226,8 @@ void* quickSort(void* para)
     Parameter param1 = {v,j+1};
     Parameter param2 = {v+i,n-i};
 
-    if (n >= 1<<20) {
+    // threads take ~70us to create
+    if (n >= 1<<16) {
         // parallel version
         pthread_create(&Thread[0], NULL, &quickSort, &param1);
         pthread_create(&Thread[1], NULL, &quickSort, &param2);
