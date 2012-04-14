@@ -35,9 +35,9 @@
 #include <ctime>
 #include <pthread.h>
 
-#define PRINT_SORTED_ARRAY
-#define PRINT_RUN_TIME
 #define PRINT_RESULTS
+#define PRINT_RUN_TIME
+//#define PRINT_SORTED_ARRAY
 
 // printout width
 static const int WIDTH = 16;
