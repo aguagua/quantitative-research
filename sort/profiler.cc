@@ -39,8 +39,25 @@
 #include <sys/time.h>
 #include <pthread.h>
 #include <exception>
+#include <fstream>
+#include <sys/file.h>
 
 using namespace std;
+
+static ofstream sa;
+
+void printSortedArray(algos sAlgo, int * array, int n)
+{
+    // check the functionality of the algorithm
+    sa << sAlgo.name << " sorted array in ascending order: "
+       << "("<< n << ")"<< std::endl;
+    for (int i = 0 ; i < n; ++i) {
+        sa << std::setw(WIDTH) << array[i];
+        if ((n>=16) && (i%16 ==0) && (i>=16))
+            sa << std::endl;
+    }
+    sa << std::endl;
+}
 
 // algorithm benchmark function
 clock_t benchmark(algos sAlgo, int * v, int n)
@@ -72,12 +89,7 @@ clock_t benchmark(algos sAlgo, int * v, int n)
     gettimeofday(&endTime, NULL);
 
 #ifdef PRINT_SORTED_ARRAY
-    // check the functionality of the algorithm
-    std::cout << sAlgo.name << " sorted array in ascending order: " << std::endl;
-    for (int i = 0 ; i < n; ++i) {
-        std::cout << array[i] << std::endl;
-    }4
-         std::cout << std::endl;
+    printSortedArray(sAlgo, array, n);
 #endif
 
     // delete the array
@@ -113,12 +125,18 @@ void profiler(algos sAlgos[], int num, int arraySize)
     // find the best algorithms for a certain input data sizes
     bool hits[num];
 
+#ifdef PRINT_SORTED_ARRAY
+    sa.open("sorted_array.txt");
+#endif
+
 #ifdef PRINT_RUN_TIME
-    std::cout << std::setw(WIDTH) <<"Size";
+    ofstream rt;
+    rt.open("run_time.txt");
+    rt << std::setw(WIDTH) <<"Size";
     for (int i= 0 ; i < num; i++) {
-        std::cout << std::setw(WIDTH) << sAlgos[i].name;
+        rt << std::setw(WIDTH) << sAlgos[i].name;
     }
-    std::cout << std::endl;
+    rt << std::endl;
 #endif
 
     // increase input data size and find the best performing algorithm
@@ -140,7 +158,6 @@ void profiler(algos sAlgos[], int num, int arraySize)
         for (int i = 0; i < num; ++i) {
             p[i] = {sAlgos[i], v, size, &runTime[i]};
             pthread_create(&Thread[i], NULL, &pBenchmark, &p[i]);
-            //runTime[i] = benchmark(sAlgos[i], v, size);
         }
 
         // wait for the threads to finish
@@ -150,11 +167,11 @@ void profiler(algos sAlgos[], int num, int arraySize)
         }
 
 #ifdef PRINT_RUN_TIME
-        std::cout << std::setw(WIDTH) << size;
+        rt << std::setw(WIDTH) << size;
         for (int i= 0 ; i < num; i++) {
-            std::cout << std::setw(WIDTH) << runTime[i];
+            rt << std::setw(WIDTH) << runTime[i];
         }
-        std::cout << std::endl;
+        rt << std::endl;
 #endif
 
         // printout the optimal sorting algorithm at the least input size
@@ -175,4 +192,13 @@ void profiler(algos sAlgos[], int num, int arraySize)
             }
         }
     }
+
+#ifdef PRINT_RUN_TIME
+    rt.close();
+#endif
+
+#ifdef PRINT_SORTED_ARRAY
+    sa.close();
+#endif
+
 }

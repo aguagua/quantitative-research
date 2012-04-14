@@ -32,13 +32,15 @@
 #ifndef PROFILER_HH
 #define PROFILER_HH
 
+#include <ctime>
+#include <pthread.h>
 
-//#define PRINT_SORTED_ARRAY
-//#define PRINT_RUN_TIME
+#define PRINT_SORTED_ARRAY
+#define PRINT_RUN_TIME
 #define PRINT_RESULTS
 
 // printout width
-static const int WIDTH = 20;
+static const int WIDTH = 16;
 
 // functional pointer to different sorting algos
 typedef void (*algo)(int *, int);
@@ -60,5 +62,33 @@ typedef struct Par{
     int n;
     clock_t* r;
 } Par;
+
+// Mutex class
+class Mutex
+{
+  public:
+    Mutex() {}
+    virtual ~Mutex() {}
+    void lock() { pthread_mutex_lock(&mutex); }
+    void unlock() { pthread_mutex_unlock(&mutex); }
+
+  private:
+    pthread_mutex_t mutex;
+};
+
+// Guard class
+template <typename T>
+class Guard
+{
+  public:
+    explicit Guard(T& t) : gate(t) { gate.lock(); }
+    ~Guard() { gate.unlock(); }
+
+  private:
+    // gate can be a semaphore or mutex
+    T& gate;
+    Guard(const Guard&);
+    Guard& operator=(const Guard&);
+};
 
 #endif
