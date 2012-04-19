@@ -33,6 +33,10 @@
 #include <cstdlib>
 #include <cstring>
 #include <pthread.h>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
 
 // bubble sort
 // compare and swap
@@ -196,6 +200,25 @@ void shellSort(int* v, int n)
          sizeIndex >= 0;
          --sizeIndex)
         shellSortPhase(v, n, gaps[sizeIndex]);
+}
+
+// c++ default sort
+void stlSort(int* v, int n)
+{
+    vector<int> data;
+    data.reserve(n);
+    copy(v, v+n, data.begin());
+    sort(data.begin(), data.end());
+    copy(data.begin(),data.end(),v);
+}
+
+void stlStableSort(int* v, int n)
+{
+    vector<int> data;
+    data.reserve(n);
+    copy(v, v+n, data.begin());
+    stable_sort(data.begin(), data.end());
+    copy(data.begin(),data.end(),v);
 }
 
 //parallel quick sort

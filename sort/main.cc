@@ -44,8 +44,10 @@ int main (int argc, char * const argv[]) {
         //{&selectionSort,"selectionsort"},
         //{&shellSort, "shellsort"},
         {&quickSort, "quicksort"},
-        {&mergeSort, "mergesort"},
-        //{&heapSort, "heapsort"},
+        //{&mergeSort, "mergesort"},
+        {&heapSort, "heapsort"},
+        {&stlSort, "STLsort"},
+        {&stlStableSort,"STLStableSort"},
         {&parallelQuickSort, "parquicksort"}
     };
 
@@ -53,7 +55,7 @@ int main (int argc, char * const argv[]) {
     int numofAlgos = sizeof(sortingAlgos)/sizeof(sortingAlgos[0]);
 
     // maximum input data array size 10 million
-    int arraySize = 1<<23+1;
+    int arraySize = 1<<29+1;
 
     // profile sorting algorithms
     profiler(sortingAlgos, numofAlgos, arraySize);

@@ -7,5 +7,7 @@ compile:
 run:
 	./psort > psort.log
 
+check:
+	ps -eLf
 clean:
 	rm -rf run_time.txt sorted_array.txt psort.log

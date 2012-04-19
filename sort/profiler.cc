@@ -48,12 +48,13 @@ static ofstream sa;
 
 void printSortedArray(algos sAlgo, int * array, int n)
 {
+    Guard<Mutex> guard(tm);
     // check the functionality of the algorithm
     sa << sAlgo.name << " sorted array in ascending order: "
        << "("<< n << ")"<< std::endl;
     for (int i = 0 ; i < n; ++i) {
         sa << std::setw(WIDTH) << array[i];
-        if ((n>=16) && (i%16 ==0) && (i>=16))
+        if (((i+1)%ITEMS_PER_LINE == 0) && ((i+1)/ITEMS_PER_LINE))
             sa << std::endl;
     }
     sa << std::endl;
@@ -127,6 +128,7 @@ void profiler(algos sAlgos[], int num, int arraySize)
 
 #ifdef PRINT_SORTED_ARRAY
     sa.open("sorted_array.txt");
+    Mutex tm;
 #endif
 
 #ifdef PRINT_RUN_TIME
