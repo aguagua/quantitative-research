@@ -47,6 +47,8 @@ void mergeSort(int* v, int n);
 void insertionSort(int* v, int n);
 void bubbleSort(int* v, int n);
 void shellSort(int* v, int n);
+void stlSort(int*v, int n);
+void stlStableSort(int*v, int n);
 
 // parallel quicksort
 void parallelQuickSort(int* v, int n);
