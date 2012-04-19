@@ -35,6 +35,7 @@
 #include <pthread.h>
 #include <vector>
 #include <algorithm>
+#include "timsort.hpp"
 
 using namespace std;
 
@@ -218,6 +219,16 @@ void stlStableSort(int* v, int n)
     data.reserve(n);
     copy(v, v+n, data.begin());
     stable_sort(data.begin(), data.end());
+    copy(data.begin(),data.end(),v);
+}
+
+void timSort(int* v, int n)
+{
+    vector<int> data;
+    data.reserve(n);
+    copy(v, v+n, data.begin());
+    std::less<int> lt;
+    timsort(data.begin(), data.end(), lt);
     copy(data.begin(),data.end(),v);
 }
 

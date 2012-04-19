@@ -48,6 +48,7 @@ int main (int argc, char * const argv[]) {
         {&heapSort, "heapsort"},
         {&stlSort, "STLsort"},
         {&stlStableSort,"STLStableSort"},
+        {&timSort, "timsort"},
         {&parallelQuickSort, "parquicksort"}
     };
 
