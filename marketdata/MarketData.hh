@@ -2,7 +2,7 @@
  * William Wang
  */
 
-/** This implementation uses pthreads, libraries such as boost::thread can be used if allowed. 
+/** This implementation uses pthreads, libraries such as boost::thread can be used if installed. 
  */
 
 #include <pthread.h>
