@@ -39,24 +39,25 @@ int main (int argc, char * const argv[]) {
     
     // sorting algorithms, function and name
     algos sortingAlgos[] = {
-        //{&bubbleSort, "bubblesort"},
-        //{&insertionSort, "insertionsort"},
-        //{&selectionSort,"selectionsort"},
-        //{&shellSort, "shellsort"},
+        {&bubbleSort, "bubblesort"},
+        {&insertionSort, "insertionsort"},
+        {&selectionSort,"selectionsort"},
+        {&shellSort, "shellsort"},
         {&quickSort, "quicksort"},
-        //{&mergeSort, "mergesort"},
+        {&mergeSort, "mergesort"},
         {&heapSort, "heapsort"},
         {&stlSort, "STLsort"},
-        {&stlStableSort,"STLStableSort"},
+        {&stlStableSort,"STLstablesort"},
         {&timSort, "timsort"},
-        {&parallelQuickSort, "parquicksort"}
+        {&parallelQuickSort, "parquicksort"},
+        {&smoothSort, "smoothsort"}
     };
 
     // number of algorithms
     int numofAlgos = sizeof(sortingAlgos)/sizeof(sortingAlgos[0]);
 
     // maximum input data array size 10 million
-    int arraySize = 1<<29+1;
+    int arraySize = 1<<23+1;
 
     // profile sorting algorithms
     profiler(sortingAlgos, numofAlgos, arraySize);
