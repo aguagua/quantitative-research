@@ -2,7 +2,7 @@
 
 # C++11 requires g++ version >= 4.3
 compile:
-	g++-mp-4.7 main.cc profiler.cc sort.cc --std=c++0x -pthread -o psort
+	g++ main.cc profiler.cc sort.cc --std=c++0x -pthread -o psort
 
 run:
 	./psort > psort.log

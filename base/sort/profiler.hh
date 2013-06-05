@@ -40,7 +40,7 @@
 //#define PRINT_SORTED_ARRAY
 
 // printout width
-static const int WIDTH = 16;
+static const int WIDTH = 14;
 static const int ITEMS_PER_LINE = 8;
 
 // functional pointer to different sorting algos
