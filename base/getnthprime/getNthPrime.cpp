@@ -7,7 +7,7 @@
 #include<cassert>
 #include<cstdlib>
 
-/** Based on the prime numbe theorem, an asymptotic expression for the
+/** Based on the prime number theorem, an asymptotic expression for the
     nth prime number is n*ln(n), and according to Rosser's theorem,
     the nth prime number is larger than n*ln(n) but upper bounded by 
     n*ln(n) + nlnln(n) for n >= 6. 
